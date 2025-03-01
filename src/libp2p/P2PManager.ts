@@ -118,7 +118,7 @@ export class P2PManager {
       throw new Error('P2P not initialized. Call initialize() first.')
     }
 
-    console.log(`Dialling:`, multiaddr)
+    console.log(`Dialing:`, multiaddr)
     try {
       const conn = await this.node.dial(multiaddr)
       console.log('Connected to', conn.remotePeer, 'on', conn.remoteAddr)
